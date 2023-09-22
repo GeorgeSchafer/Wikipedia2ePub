@@ -1,0 +1,10 @@
+{
+  "name": "Wikipedia2ePub",
+  "description": "Quickly exports Wikipedia articles to ePub files.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "export-arrow.svg"
+  }
+}
