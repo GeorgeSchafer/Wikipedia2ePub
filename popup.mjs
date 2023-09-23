@@ -1,5 +1,5 @@
 'use strict'
-import { article } from 'content.mjs'
+import { default as article } from './content-script.mjs'
 
 
 
