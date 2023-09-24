@@ -1,30 +1,16 @@
+
 {
+  "name": "Wikipedia2ePub",
+  "version": "0.0.1",
   "manifest_version": 3,
-  "name": "Focus Mode",
-  "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
-  "version": "1.0",
-  "icons": {
-    "16": "images/export-16.png",
-    "32": "images/export-32.png",
-    "48": "images/export-64.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {
-    "default_icon": {
-      "16": "images/export-16.png",
-      "32": "images/export-32.png",
-      "48": "images/export-48.png"
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["wikipedia.js"],
+      "match_origin_as_fallback": false,
+      "match_about_blank": false,
+      "run_at": "document_idle",
+      "world": "ISOLATED"
     }
-  },
-  "permissions": ["scripting", "activeTab"],
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "Command+B"
-      }
-    }
-  }
+  ]
 }
