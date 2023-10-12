@@ -5,12 +5,17 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://*.wikipedia.org/*"],
+      "matches": ["https://*.m.wikipedia.org/*"],
       "js": ["wikipedia.js"],
       "match_origin_as_fallback": false,
       "match_about_blank": false,
       "run_at": "document_idle",
       "world": "ISOLATED"
     }
-  ]
+  ], 
+  "icons": {
+    "16": "images/convert-16.png",
+    "32": "images/convert-32.png",
+    "64": "images/convert-64.png"
+  }
 }
