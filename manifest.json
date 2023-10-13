@@ -2,7 +2,13 @@
 {
   "name": "Wikipedia2ePub",
   "version": "0.0.1",
+  "description": "A Chrome extension to convert Wikipedia articles to ePub format quickly and easily.",
   "manifest_version": 3,
+  "minimum_chrome_version": "92",
+  "web_accessible_resources": [{
+        "matches": ["https://*.m.wikipedia.org/*"],
+        "resources": ["wikipedia.js"]
+  }],
   "content_scripts": [
     {
       "matches": ["https://*.m.wikipedia.org/*"],

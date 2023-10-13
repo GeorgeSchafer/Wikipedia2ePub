@@ -1,0 +1,28 @@
+{
+    "name": "wikipedia2epub",
+    "version": "0.1.0",
+    "description": "A Chrome extension to convert Wikipedia articles to ePub format quickly and easily.",
+    "main": "wikipedia.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GeorgeSchafer/Wikipedia2ePub.git"
+    },
+    "keywords": [
+        "Chrome",
+        "extension",
+        "wikipedia",
+        "epub"
+    ],
+    "author": "George Schafer",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GeorgeSchafer/Wikipedia2ePub/issues"
+    },
+    "homepage": "https://github.com/GeorgeSchafer/Wikipedia2ePub#readme",
+    "dependencies": {
+        "@lesjoursfr/html-to-epub": "^4.1.1"
+    }
+}
